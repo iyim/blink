@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "公交到了-北京实时公交",
+    "backgroundColor": "#00ff00"
+  }
+}
