@@ -1,6 +1,8 @@
 // pages/classic/classic.js
 import {ClassicModel} from '../../models/classic.js'
+import {LikeModel} from '../../models/like.js'
 const classicModel = new ClassicModel()
+const likeModel = new LikeModel()
 Page({
 
   /**
@@ -15,11 +17,18 @@ Page({
    */
   onLoad: function (options) {
     classicModel.getLatest(res => {
-      console.log(this)
+      console.log(this.data)
       this.setData({
         classic: res
       })
+      console.log(this.data)
     })
+  },
+
+  onLike: function(event){
+    console.log('outter-like')
+    console.log(event)
+    likeModel.like(event.detail.likeState, this.data.classic.id, this.data.classic.type)
   },
 
   /**

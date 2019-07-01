@@ -25,7 +25,7 @@ Component({
    */
   methods: {
     onLike: function (event) {
-      console.log(this)
+      console.log('inner-like')
       let like = this.properties.like
       let count = this.properties.count
       count = like ? --count : ++count
@@ -33,8 +33,10 @@ Component({
         like: !like,
         count: count
       })
-      console.log(this)
-
+      const likeState = this.data.like ? 'like': 'unlike'
+      this.triggerEvent('like', {
+        likeState: likeState
+      }, {})
     }
   }
 })
