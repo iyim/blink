@@ -1,7 +1,12 @@
 import {Http} from '../utils/http.js'
 
-class Classic{
-  getLatest(){
-
+export class ClassicModel extends Http{
+  getLatest(callback){
+    this.request({
+      url: 'classic/latest',
+      success: (res) => {
+        callback(res)
+      }
+    })
   }
 }
