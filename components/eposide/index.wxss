@@ -1,1 +1,32 @@
 /* components/eposide/index.wxss */
+.eposide-container{
+  display: flex;
+  
+}
+
+.eposide-left{
+  display: flex;
+  justify-content: baseline;
+}
+.eposide-left .no{
+  font-size: 30rpx;
+}
+.eposide-left .index{
+  font-size: 40rpx;
+  font-weight: bold;
+
+}
+.eposide-left .gap-line{
+  width: 3rpx;
+  height: 40rpx;
+  background-color: darkgray;
+  margin: 0 8rpx;
+}
+
+.eposide-right{
+  display: flex;
+  flex-direction: column;
+}
+.eposide-right .year,.eposide-right .month{
+  font-size: 20rpx;
+}

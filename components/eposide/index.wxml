@@ -1,2 +1,12 @@
 <!--components/eposide/index.wxml-->
-<text>components/eposide/index.wxml</text>
+<view class="eposide-container">
+  <view class="eposide-left">
+    <text class="no">No.</text>
+    <text class="index">{{_index}}</text>
+    <view class="gap-line"></view>
+  </view>
+  <view class="eposide-right">
+    <text class="year">{{year}}</text>
+    <text class="month">{{month}}</text>
+  </view>
+</view>

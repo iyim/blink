@@ -1,1 +1,12 @@
 /* pages/classic/classic.wxss */
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container .eposide{
+  margin-left: 20rpx;
+}
+.header-container .like{
+  margin-right: 20rpx;
+}
